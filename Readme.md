@@ -23,12 +23,11 @@
 1. **개별 모델**
    - Transformer을 이용한 감정분석 모델 , CNN을 이용한 감정분석 모델, BERT(bert-base-multilingual-cased)
 2. **데이터 셋**
-- 학습, 테스트 데이터 : [Web] https://github.com/e9t/nsmc.git
-   
-- Kaggle Competition 테스트 데이터 : [API] korean-sa-competition-dfe610
+   	- 학습, 테스트 데이터 : [Web] https://github.com/e9t/nsmc.git
+   	- Kaggle Competition 테스트 데이터 : [API] korean-sa-competition-dfe610
 3. **전처리**
-         - Transformer, CNN : 감정분석 대상 문장을 Konlpy의 Okt를 이용하여 형태소 분석 결과를 토크나이저로 입력
-         - BERT 감정분석 모델 : BERT 토크나이져에서 감정분석 대상 문장 토큰처리
+        - Transformer, CNN : 감정분석 대상 문장을 Konlpy의 Okt를 이용하여 형태소 분석 결과를 토크나이저로 입력
+        - BERT 감정분석 모델 : BERT 토크나이져에서 감정분석 대상 문장 토큰처리
 4. **모델 학습**
 
    - 모델 학습은 반드시 순차적으로 실행해야 한다. (비고 : 1 모델 학습 → 1 모델 예측결과 저장)
@@ -80,18 +79,15 @@
 
 **본 앙상블 모델은 아래 2가지 모델의 예측결과를 소프트 보팅(Soft Voting)한 결과를 최종 모델의 아웃풋으로 산출하며, 최종 모델의 최종 예측 결과는 ensemble_out 인스턴스에 저장되며,  'ensemble_submission.csv'로 저장할 수 있다.**
 
-1. **개별 모델**
-   
-- ELECTRA(electra-large-generator) , BERT (bert-base-multilingual-cased)
-   
+1. **개별 모델***
+   - ELECTRA(electra-large-generator) , BERT (bert-base-multilingual-cased)
+
 2. **데이터 셋**
 
    - 학습, 테스트 데이터 : [Web] http://doraemon.iis.sinica.edu.tw/emotionlines/
-- Kaggle Competition 테스트 데이터 : [API] english-sa-competition-dfe610
-   
+   - Kaggle Competition 테스트 데이터 : [API] english-sa-competition-dfe610
 3. **전처리**
-
-   ​    - Nltk 라이브러리를 통해 stopword 등 불용어 제거 후 [CLS], [SEP]로 분리하여 ELECTRA, Bert 토크나이져로 입력
+	- Nltk 라이브러리를 통해 stopword 등 불용어 제거 후 [CLS], [SEP]로 분리하여 ELECTRA, Bert 토크나이져로 입력
 
 
 4. **모델 학습**
@@ -100,12 +96,17 @@
    - 모델 학습은 데이터 셋 출처의 미국 영화 드라마 Friends 학습 데이터를 활용한다.
 
 5. **개별 모델 예측 결과 저장**
-- 모델 학습 후 각 모델의 테스트 데이터에 대한 예측 결과를 순차적으로 각 모델의 x_predict, x_predict_score 인스턴스에 저장 될 수 있도록 실행해야 한다.
+
+   - 모델 학습 후 각 모델의 테스트 데이터에 대한 예측 결과를 순차적으로 각 모델의 x_predict, x_predict_score 인스턴스에 저장 될 수 있도록 실행해야 한다.
+
    - 테스트는 Kaggle korean-sa-competition 테스트 데이터를 활용한다.(변경 가능)
+
    - 모든 개별 모델의 예측 결과를 csv 파일로 저장 할 수 있다.
+
    - Sentiment_analysis_English_KSB_origianal.jpynb는 학습데이터의 테스트 데이터로 성능을 평가한다.
+
    - Sentiment_analysis_English_KSB_kaggle.jpynb는 Kaggle english-sa-competition 테스트 데이터를 통해 앙상블 감성분석 예측 결과를 생성한다.
-   
+
 6. **개별 모델 예측 결과 생성 및 하드보팅 실행**
 
    - 개별 모델의 예측 결과를 Soft Voting 하여 최종 앙상블 모델의 예측 결과를 산출한다.
