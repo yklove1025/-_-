@@ -40,8 +40,8 @@
    - Transformer를 이용한 감정분석 모델, BERT 감정분석 모델은 모델의 예측 결과를 Argmax한 결과를 Predict 인스턴스에 저장한다.
    - CNN을 이용한 감정분석 모델은 모델의 예측 결과가 > 0.5 면 1, 이외의 경우 0으로 Predict 인스턴스에 저장한다.
    - 모든 개별 모델의 예측 결과를 csv 파일로 저장 할 수 있다.
-   - Sentiment_analysis_Korean_KSB_origianal.jpynb는 학습데이터의 테스트 데이터로 성능을 평가한다.
-   - Sentiment_analysis_Korean_KSB_kaggle.jpynb는 Kaggle korean-sa-competition 테스트 데이터를 통해 앙상블 감성분석 예측 결과를 생성한다.
+   - Sentiment_analysis_Korean_KSB_origianal.ipynb는 학습데이터의 테스트 데이터로 성능을 평가한다.
+   - Sentiment_analysis_Korean_KSB_kaggle.ipynb는 Kaggle korean-sa-competition 테스트 데이터를 통해 앙상블 감성분석 예측 결과를 생성한다.
 6. **개별 모델 예측 결과 생성 및 하드보팅 실행**
 
    - 개별 모델의 예측 결과를 Hard Voting 하여 최종 앙상블 모델의 예측 결과를 산출한다.
@@ -108,22 +108,18 @@
    - 모델 학습은 데이터 셋 출처의 미국 영화 드라마 Friends 학습 데이터를 활용한다.
 
 5. **개별 모델 예측 결과 저장**
-
-   - 모델 학습 후 각 모델의 테스트 데이터에 대한 예측 결과를 순차적으로 각 모델의 x_predict, x_predict_score 인스턴스에 저장 될 수 있도록 실행해야 한다.
-
-   - 테스트는 Kaggle korean-sa-competition 테스트 데이터를 활용한다.(변경 가능)
-
-   - 모든 개별 모델의 예측 결과를 csv 파일로 저장 할 수 있다.
-
-   - Sentiment_analysis_English_KSB_origianal.jpynb는 학습데이터의 테스트 데이터로 성능을 평가한다.
-
-   - Sentiment_analysis_English_KSB_kaggle.jpynb는 Kaggle english-sa-competition 테스트 데이터를 통해 앙상블 감성분석 예측 결과를 생성한다.
-
+- 모델 학습 후 각 모델의 테스트 데이터에 대한 예측 결과를 순차적으로 각 모델의 x_predict, x_predict_score 인스턴스에 저장 될 수 있도록 실행해야 한다.
+   
+- 모든 개별 모델의 예측 결과를 csv 파일로 저장 할 수 있다.
+   
+- Sentiment_analysis_English_KSB_origianal.ipynb는 학습데이터의 테스트 데이터로 성능을 평가한다.
+   
+- Sentiment_analysis_English_KSB_kaggle.ipynb는 Kaggle english-sa-competition 테스트 데이터를 통해 앙상블 감성분석 예측 결과를 생성한다.
+   
 6. **개별 모델 예측 결과 생성 및 하드보팅 실행**
-
-   - 개별 모델의 예측 결과를 Soft Voting 하여 최종 앙상블 모델의 예측 결과를 산출한다.
+- 개별 모델의 예측 결과를 Soft Voting 하여 최종 앙상블 모델의 예측 결과를 산출한다.
    - Soft Voting은 개별모델의 예측 결과를 합산하고, 합산한 결과를 모델 수로 나눈 평균 데이터를 인덱스 별로 Argmax하여 앙상블 감성분석 예측 결과로 생성한다.
-
+   
 7. **앙상블 모델 아웃풋과 CSV 파일 저장**
 
    - 앙상블 모델의 최종 예측 결과는 ensemble_out 인스턴스에 저장된다.
@@ -160,15 +156,21 @@
 
    ​	- KoELECTRA를 활용한 감정분석 모델은 한국어 앙상블 감정분석의 BERT를 이용한 감정분석 모델과 같다.
 
-4. 실행환경
+3. 실행환경
 
    - 본 소스는 구글 Colab에서 작성됨
-
    - 본 소스의 실행을 위해서는 Colab Pro 환경이 필요(GPU 메모리 필요)
 
+
+4. 모델 예측 결과 저장
+   - Sentiment_analysis_korean_KSB_KoELECTRA_original.ipynb는 학습데이터의 테스트 데이터로 성능을 평가한다.
+   - Sentiment_analysis_korean_KSB_kaggle_KoELECTRA.ipynb는 Kaggle english-sa-competition 테스트 데이터를 통해 앙상블 감성분석 예측 결과를 생성한다.
+
 5. 실행파일
+
    	- KoELECTRA를 활용한 감정분석 모델 : Sentiment_analysis_korean_KSB_KoELECTRA_original.ipynb
-   	- KoELECTRA를 활용한 감정분석 모델 for kaggle Competition :Sentiment_analysis_korean_KSB_kaggle_KoELECTRA.ipynb
+
+   - KoELECTRA를 활용한 감정분석 모델 for kaggle Competition : Sentiment_analysis_korean_KSB_kaggle_KoELECTRA.ipynb
 
 ☞ Kaggle 리더보드에는 KoELECTRA로 업로드 함
 
