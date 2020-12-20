@@ -148,12 +148,6 @@
 1. 모델의 오픈소스 참고 출처
    	- Transformer를 이용한 감정분석 모델 : https://github.com/Parkchanjun/KU-NLP-2020-1/Transformer를 이용한 감정분석_한국어.jpynb
 
-2. 상세사항
-
-   - 아래 깃허브의 Readme.md 확인
-
-   - https://github.com/yklove1025/Ensamble-Sentiment-Analysis-for-Korean
-
 3. 실행방법
 
    ​	- KoELECTRA를 활용한 감정분석 모델은 한국어 앙상블 감정분석의 BERT를 이용한 감정분석 모델과 같다.
