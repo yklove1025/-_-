@@ -61,6 +61,12 @@
    - ① 실행 후 ② 순차 실행 → 종료 후 ③ 실행 (실행순번 표기)
    - BERT 모델 저장 후 업로드 시에도 메모리 문제 발생 가능함(재실행 권장)
 
+9. 실행파일
+    - 한국어 앙상블 감정분석 모델 : Sentiment_analysis_korean_KSB_original.ipynb
+    - 한국어 앙상블 감정분석 모델 for Kaggle Competition : Sentiment_analysis_korean_KSB_kaggle.ipynb
+
+☞ Kaggle 리더보드 업로드 시 index 칼럼명을 'Id'로 입력하여 저장 후 제출함
+
 
 
 **■ 2. 영어 앙상블 감성분석 모델**
@@ -125,7 +131,44 @@
    - ① 실행 후 ② 순차 실행 → 종료 후 ③ 실행 (실행순번 표기)
    - BERT 모델 저장 후 업로드 시에도 메모리 문제 발생 가능함(재실행 권장)
 
+9. 실행파일
+   - 한국어 앙상블 감정분석 모델 : Sentiment_analysis_English_KSB_original.ipynb
+   - 한국어 앙상블 감정분석 모델 for Kaggle Competition : Sentiment_analysis_English_KSB_kaggle.ipynb
+
 ☞ Kaggle 리더보드 업로드 시 index 칼럼명을 'Id'로 입력하여 저장 후 제출함
 
 
+
+# KoELECTRA를 활용한 한국어 감정분석 모델
+
+본 한국어 감정분석 모델은 고려대학교 디지털금융공학과 DFE610 디지털금융공학을 위한 자연어처리기술 수업의 과제를 수행하기 위해 개발한 모델이다.
+
+본 한국어 감정분석 모델은 '네이버 영화리뷰 감정분석 with Hugging Face BERT'의 오픈소스를 참고하여 구성하였다.
+
+1. 모델의 오픈소스 참고 출처
+   	- Transformer를 이용한 감정분석 모델 : https://github.com/Parkchanjun/KU-NLP-2020-1/Transformer를 이용한 감정분석_한국어.jpynb
+
+2. 상세사항
+
+   - 아래 깃허브의 Readme.md 확인
+
+   - https://github.com/yklove1025/Ensamble-Sentiment-Analysis-for-Korean
+
+3. 실행방법
+
+   ​	- KoELECTRA를 활용한 감정분석 모델은 한국어 앙상블 감정분석의 BERT를 이용한 감정분석 모델과 같다.
+
+4. 실행환경
+
+   - 본 소스는 구글 Colab에서 작성됨
+
+   - 본 소스의 실행을 위해서는 Colab Pro 환경이 필요(GPU 메모리 필요)
+
+5. 실행파일
+   	- KoELECTRA를 활용한 감정분석 모델 : Sentiment_analysis_korean_KSB_KoELECTRA_original.ipynb
+   	- KoELECTRA를 활용한 감정분석 모델 for kaggle Competition :Sentiment_analysis_korean_KSB_kaggle_KoELECTRA.ipynb
+
+☞ Kaggle 리더보드에는 KoELECTRA로 업로드 함
+
+☞ Kaggle 리더보드 업로드 시 index 칼럼명을 'Id'로 입력하여 저장 후 제출함
 
