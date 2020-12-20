@@ -109,13 +109,13 @@
 
 5. **개별 모델 예측 결과 저장**
 - 모델 학습 후 각 모델의 테스트 데이터에 대한 예측 결과를 순차적으로 각 모델의 x_predict, x_predict_score 인스턴스에 저장 될 수 있도록 실행해야 한다.
-   
+  
 - 모든 개별 모델의 예측 결과를 csv 파일로 저장 할 수 있다.
-   
+  
 - Sentiment_analysis_English_KSB_origianal.ipynb는 학습데이터의 테스트 데이터로 성능을 평가한다.
-   
+  
 - Sentiment_analysis_English_KSB_kaggle.ipynb는 Kaggle english-sa-competition 테스트 데이터를 통해 앙상블 감성분석 예측 결과를 생성한다.
-   
+  
 6. **개별 모델 예측 결과 생성 및 하드보팅 실행**
 - 개별 모델의 예측 결과를 Soft Voting 하여 최종 앙상블 모델의 예측 결과를 산출한다.
    - Soft Voting은 개별모델의 예측 결과를 합산하고, 합산한 결과를 모델 수로 나눈 평균 데이터를 인덱스 별로 Argmax하여 앙상블 감성분석 예측 결과로 생성한다.
@@ -134,8 +134,8 @@
    - BERT 모델 저장 후 업로드 시에도 메모리 문제 발생 가능함(재실행 권장)
 
 9. 실행파일
-   - 한국어 앙상블 감정분석 모델 : Sentiment_analysis_English_KSB_original.ipynb
-   - 한국어 앙상블 감정분석 모델 for Kaggle Competition : Sentiment_analysis_English_KSB_kaggle.ipynb
+   - 영어 앙상블 감정분석 모델 : Sentiment_analysis_English_KSB_original.ipynb
+   - 영어 앙상블 감정분석 모델 for Kaggle Competition : Sentiment_analysis_English_KSB_kaggle.ipynb
 
 ☞ kaggle 리더보드에 개별 모델별 예측 결과 및 앙상블 감성분석 결과 제출함 (개별 모델 별 예측 결과를 csv 파일로 저장하고 제출 할 수 있다.)
 
