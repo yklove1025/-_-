@@ -65,7 +65,13 @@
     - 한국어 앙상블 감정분석 모델 : Sentiment_analysis_korean_KSB_original.ipynb
     - 한국어 앙상블 감정분석 모델 for Kaggle Competition : Sentiment_analysis_korean_KSB_kaggle.ipynb
 
+☞ kaggle 리더보드에 개별 모델별 예측 결과 및 앙상블 감성분석 결과 제출함 (개별 모델 별 예측 결과를 csv 파일로 저장하고 제출 할 수 있다.)
+
+☞ kaggle 리더보드에 개별 모델별 예측 결과 제출 시 저장된 CSV 파일의 예측결과의 칼럼명을 'Predicted'로 수정 후 제출해야 한다.
+
 ☞ Kaggle 리더보드 업로드 시 index 칼럼명을 'Id'로 입력하여 저장 후 제출함
+
+
 
 
 
@@ -93,7 +99,7 @@
    - 학습, 테스트 데이터 : [Web] http://doraemon.iis.sinica.edu.tw/emotionlines/
    - Kaggle Competition 테스트 데이터 : [API] english-sa-competition-dfe610
 3. **전처리**
-	- Nltk 라이브러리를 통해 stopword 등 불용어 제거 후 [CLS], [SEP]로 분리하여 ELECTRA, Bert 토크나이져로 입력
+	- 문장단위 분리 후  [CLS], [SEP]로 분리하여 ELECTRA, Bert 토크나이져로 입력
 
 
 4. **모델 학습**
@@ -134,6 +140,8 @@
 9. 실행파일
    - 한국어 앙상블 감정분석 모델 : Sentiment_analysis_English_KSB_original.ipynb
    - 한국어 앙상블 감정분석 모델 for Kaggle Competition : Sentiment_analysis_English_KSB_kaggle.ipynb
+
+☞ kaggle 리더보드에 개별 모델별 예측 결과 및 앙상블 감성분석 결과 제출함 (개별 모델 별 예측 결과를 csv 파일로 저장하고 제출 할 수 있다.)
 
 ☞ Kaggle 리더보드 업로드 시 index 칼럼명을 'Id'로 입력하여 저장 후 제출함
 
