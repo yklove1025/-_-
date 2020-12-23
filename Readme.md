@@ -26,6 +26,7 @@
    	   - 학습, 테스트 데이터 : [Web] https://github.com/e9t/nsmc.git
       - Kaggle Competition 테스트 데이터 : [API] korean-sa-competition-dfe610
 3. **전처리**
+          - 
           - Transformer, CNN : 감정분석 대상 문장을 Konlpy의 Okt를 이용하여 형태소 분석 결과를 토크나이저로 입력
        - BERT 감정분석 모델 : BERT 토크나이져에서 감정분석 대상 문장 토큰처리
 4. **모델 학습**
