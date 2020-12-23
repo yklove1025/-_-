@@ -23,17 +23,15 @@
 1. **개별 모델**
    - Transformer을 이용한 감정분석 모델 , CNN을 이용한 감정분석 모델, BERT(bert-base-multilingual-cased)
 2. **데이터 셋**
-   	- 학습, 테스트 데이터 : [Web] https://github.com/e9t/nsmc.git
-   	- Kaggle Competition 테스트 데이터 : [API] korean-sa-competition-dfe610
+   	   - 학습, 테스트 데이터 : [Web] https://github.com/e9t/nsmc.git
+      - Kaggle Competition 테스트 데이터 : [API] korean-sa-competition-dfe610
 3. **전처리**
-        - Transformer, CNN : 감정분석 대상 문장을 Konlpy의 Okt를 이용하여 형태소 분석 결과를 토크나이저로 입력
-        - BERT 감정분석 모델 : BERT 토크나이져에서 감정분석 대상 문장 토큰처리
+          - Transformer, CNN : 감정분석 대상 문장을 Konlpy의 Okt를 이용하여 형태소 분석 결과를 토크나이저로 입력
+       - BERT 감정분석 모델 : BERT 토크나이져에서 감정분석 대상 문장 토큰처리
 4. **모델 학습**
-
-   - 모델 학습은 반드시 순차적으로 실행해야 한다. (비고 : 1 모델 학습 → 1 모델 예측결과 저장)
-
-   - 모델 학습은 NSMC 학습 데이터를 활용한다.
-
+- 모델 학습은 반드시 순차적으로 실행해야 한다. (비고 : 1 모델 학습 → 1 모델 예측결과 저장)
+   
+- 모델 학습은 NSMC 학습 데이터를 활용한다.
 5. **개별 모델 예측 결과 저장**
 
    - 모델 학습 후 각 모델의 테스트 데이터에 대한 예측 결과를 순차적으로 각 모델의 x_predict 인스턴스에 저장 될 수 있도록 실행해야 한다.
@@ -47,20 +45,17 @@
    - 개별 모델의 예측 결과를 Hard Voting 하여 최종 앙상블 모델의 예측 결과를 산출한다.
 
    - Hard Voting은 개별모델의 예측 결과를 SUM하여 >=2인 경우 예측결과를 1로, 이외 경우 0으로 최종 아웃풋을 산출한다.
-
 7. **앙상블 모델 아웃풋과 CSV 파일 저장**
 
    - 앙상블 모델의 최종 예측 결과는 ensamble_submission 인스턴스에 저장된다.
 
    - 예측 결과는 ensamble prediction.csv로 저장할 수 있다.
-
 8. 실행환경
 
    - 본 소스는 구글 Colab에서 작성됨 
    - 본 소스의 실행을 위해서는 Colab Pro 환경이 필요(GPU 메모리 필요)
    - ① 실행 후 ② 순차 실행 → 종료 후 ③ 실행 (실행순번 표기)
    - BERT 모델 저장 후 업로드 시에도 메모리 문제 발생 가능함(재실행 권장)
-
 9. 실행파일
     - 한국어 앙상블 감정분석 모델 : Sentiment_analysis_korean_KSB_original.ipynb
     - 한국어 앙상블 감정분석 모델 for Kaggle Competition : Sentiment_analysis_korean_KSB_kaggle.ipynb
