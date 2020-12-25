@@ -10,7 +10,7 @@
 
 ##### ▷1-1 모델의 오픈소스 참고 출처
 
-1. **Transformer를 이용한 감정 분석 모델 : https://github.com/Parkchanjun/KU-NLP-2020-1, [5] Transformer를*_이용한_*감정 분석_한국어.ipynb**
+1. **Transformer를 이용한 감정 분석 모델 : https://github.com/Parkchanjun/KU-NLP-2020-1, [5] Transformer를_이용한_감정 분석_한국어.ipynb**
 2. **CNN을 이용한 감정 분석 모델 : https://github.com/Parkchanjun/KU-NLP-2020-1, [3] CNN_Sentiment_Analysis.ipynb**
 3. **BERT를 이용한 감정 분석 모델 : 네이버 영화리뷰 감정 분석 with Hugging Face BERT**,  https://colab.research.google.com/drive/13AMh8N9tEIw5rmxgc1fQfS8581mWegxj
 
@@ -75,9 +75,9 @@
 
 **▷ 2-1 모델의 오픈소스 참고 출처**
 
-1. ELECTRA를 이용한 감정 분석 모델 : https://github.com/jiwonny/nlp_emotion_classification 
+1. **ELECTRA를 이용한 감정 분석 모델 : https://github.com/jiwonny/nlp_emotion_classification** 
 
-2. BERT를 이용한 감정 분석 모델 : 네이버 영화리뷰 감정 분석 with Hugging Face BERT, https://colab.research.google.com/drive/13AMh8N9tEIw5rmxgc1fQfS8581mWegxj
+2. **BERT를 이용한 감정 분석 모델 : 네이버 영화리뷰 감정 분석 with Hugging Face BERT, https://colab.research.google.com/drive/13AMh8N9tEIw5rmxgc1fQfS8581mWegxj**
 
 **▷ 2-2 앙상블 모델의 구성 및 감정 분석 실행 방법**
 
@@ -147,7 +147,7 @@
 본 한국어 감정 분석 모델은 '네이버 영화리뷰 감정 분석 with Hugging Face BERT'의 오픈소스를 참고하여 구성하였다.
 
 1. 모델의 오픈소스 참고 출처
-   - 네이버 영화리뷰 감정 분석 with Hugging Face BERT : https://colab.research.google.com/drive/13AMh8N9tEIw5rmxgc1fQfS8581mWegxj
+   - **네이버 영화리뷰 감정 분석 with Hugging Face BERT : https://colab.research.google.com/drive/13AMh8N9tEIw5rmxgc1fQfS8581mWegxj**
 2. 실행방법
 
    - KoELECTRA를 활용한 감정 분석 모델은 한국어 앙상블 감정 분석의 BERT를 이용한 감정 분석 모델과 같다.
